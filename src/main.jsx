@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 // for import reactRouter
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from "./components/Layout";
+import Nav from "./components/Layout";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
@@ -19,7 +19,7 @@ import Page03 from "./components/1.2_pages/Page03.jsx";
 const router = createBrowserRouter([
 	{
 		path: "/",
-		element: <Layout />,
+		element: <Nav />,
 		children: [
 			{
 				path: "",
@@ -30,7 +30,7 @@ const router = createBrowserRouter([
 
 	{
 		path: "/page01",
-		element: <Layout />,
+		element: <Nav />,
 		children: [
 			{
 				path: "",
@@ -40,7 +40,7 @@ const router = createBrowserRouter([
 	},
 	{
 		path: "/page02",
-		element: <Layout />,
+		element: <Nav />,
 		children: [
 			{
 				path: "",
@@ -50,7 +50,7 @@ const router = createBrowserRouter([
 	},
 	{
 		path: "/page03",
-		element: <Layout />,
+		element: <Nav />,
 		children: [
 			{
 				path: "",
